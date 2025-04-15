@@ -12,49 +12,445 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="header bg-black font-mulish">
+    <header class="header">
       <div class="container">
-        <div class="header__wrapper text-light  lg:flex lg:items-center lg:justify-between lg:py-[1.5rem]
-        ">
+        <div
+          class="header__wrapper text-light flex items-center justify-between py-[1rem]"
+        >
           <div class="header__branding">
-            <img src="./img/logo.png" alt="" />
+            <img
+              src="./img/logo.png"
+              alt="HostLux-logo"
+              class="lg:w-[10rem] w-[9rem]"
+            />
           </div>
           <div class="flex flex-row gap-[3rem] items-center">
-            <div class="header__navd">
-            <ul class="lg:flex lg:flex-row lg:gap-[3rem] lg:text-[16px]">
-              <li><a href="./home.html">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Domain</a></li>
-              <li><a href="">Hosting</a></li>
-              <li><a href="">Page</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-          <div class="header__cta lg:flex lg:flex-row lg:gap-2">
-            <a href=""><i class="fa-solid fa-magnifying-glass lg:px-[1rem] opacity-10"></i></a>
-            <div class="lg:flex lg:flex-row lg:gap-2 lg:border-l-2 lg:border-gray-700 lg:px-[1.5rem]">
-              <img src="./img/counry_thumb01.png" alt=""  class="h-[18px] object-cover" />
-              <p>English <i class="fa-solid fa-chevron-down text-[10px]"></i></p>
+            <div class="header__navd lg:block md:hidden hidden">
+              <ul class="lg:flex lg:flex-row lg:gap-[3rem] lg:text-[16px]">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Domain</a></li>
+                <li><a href="">Hosting</a></li>
+                <li><a href="">Page</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div
+              class="header__cta lg:flex lg:flex-row lg:gap-2 md:hidden hidden lg:items-center"
+            >
+              <a href=""
+                ><i
+                  class="fa-solid fa-magnifying-glass lg:px-[1rem] lg:text-gray-400"
+                ></i
+              ></a>
+              <div
+                class="lg:flex lg:flex-row lg:gap-2 lg:border-l-2 lg:border-gray-600 lg:px-[1.5rem]"
+              >
+                <img
+                  src="./img/counry_thumb01.png"
+                  alt="Uk-Logo"
+                  class="h-[18px] object-cover"
+                />
+                <p>
+                  English <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                </p>
+              </div>
+              <a href="" class="btn bg--blue"
+                ><i class="fa-solid fa-user-plus"></i> Register</a
+              >
             </div>
           </div>
-          <a href=""  class="btn bg--blue"><i class="fa-solid fa-user-plus"></i> Register</a>
+
+          <div class="burger__menu lg:hidden">
+            <span></span><span></span><span></span>
+          </div>
         </div>
-          </div>
-          
-        <div class="header__navm lg:hidden">
-            <ul>
-              <li><a href="./home.html">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Domain</a></li>
-              <li><a href="">Hosting</a></li>
-              <li><a href="">Page</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="header__action">
+        <ul class="header__navm">
+          <li class="flex justify-between">
+            <a href="./home.html">Home</a> <i class="fa-solid fa-plus"></i>
+          </li>
+          <li><a href="">About</a></li>
+          <li><a href="">Domain</a></li>
+          <li class="flex justify-between">
+            <a href="">Hosting</a><i class="fa-solid fa-plus"></i>
+          </li>
+          <li class="flex justify-between">
+            <a href="">Page</a><i class="fa-solid fa-plus"></i>
+          </li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </div>
     </header>
 
+    <section
+      class="homeBanner bg-homeBanner bg-cover bg-no-repeat lg:w-[100vw] lg:h-[60rem] md:h-[90rem] h-[70rem] text-light font-urbanist"
+    >
+      <div class="container">
+        <div
+          class="homeBanner__wrapper lg:flex lg:flex-row lg:justify-between lg:items-center flex flex-col md:items-start pt-[10rem]"
+        >
+          <div class="md:pl-[1rem]">
+            <div class="flex gap-2">
+              <img
+                src="./img/icon.png"
+                alt="check-icon"
+                class="w-[1rem] h-[1rem]"
+              />
+              <p>Best Performance Gauranted!</p>
+            </div>
+            <h1
+              class="lg:text-[56px] md:text-[50px] text-[30px] my-[2rem] lg:max-w-[40rem] md:max-w-[30rem] max-w-[20rem] lg:leading-[4rem] md:leading-[4rem]"
+            >
+              Easy and Managed Application Website Hosting Service
+            </h1>
+            <p class="lg:max-w-[40rem] md:max-w-[40rem] max-w-[20rem]">
+              Conveniently grow superior architectures without magnetic
+              e-markets web host Uniquely whiteboard low high-yield
+              opportunities done.
+            </p>
+            <div
+              class="lg:flex lg:items-center md:flex md:items-center lg:gap-[1rem] md:gap-[1rem] mt-[2rem]"
+            >
+              <a
+                href=""
+                class="btn bg--blue hover:bg-gradient-to-r hover:from-buttonLightOrange hover:to-buttonDarkOrange"
+                >Get Started</a
+              >
+              <img
+                src="./img/truspilot-logo.png"
+                alt="Trustpilot-logo"
+                class="my-[1rem] md:my-none lg;my-none"
+              />
+              <p
+                class="border-none md:pl-[1rem] lg:pl-[1rem] md:border-l-2 lg:border-l-2"
+              >
+                4.7 Out of 5
+              </p>
+            </div>
+          </div>
+          <img src="./img/hero-thumb.png" alt="Heroimage" />
+        </div>
+      </div>
+    </section>
+
+    <section class="feature bg-bggray font-mulish text-darkblue pb-[5rem]">
+      <div class="container">
+        <div class="feature__wrapper">
+          <div
+            class="feature__choice lg:grid lg:grid-cols-4 md:grid md:grid-cols-2 gap-[2rem] grid grid-cols-1"
+          >
+            <div class="feature__choice--details group">
+              <img
+                src="./img/feature-icon_01.png"
+                alt="feature-icon"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3>Safe and Secured</h3>
+            </div>
+            <div class="feature__choice--details group">
+              <img
+                src="./img/feature-icon_02.png"
+                alt="feature-icon"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3>99.90% Uptime</h3>
+            </div>
+            <div class="feature__choice--details group">
+              <img
+                src="./img/feature-icon_03.png"
+                alt="feature-icon"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3>Autometic Update</h3>
+            </div>
+            <div class="feature__choice--details group">
+              <img
+                src="./img/feature-icon_04.png"
+                alt="feature-icon"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3>Speed Gauranty</h3>
+            </div>
+          </div>
+          <h2
+            class="text-center font-urbanist max-w-[18rem] lg:max-w-[40rem] md:max-w-[40rem] m-auto lg:text-[40px] md:text-[35px] text-[17px] py-[5rem]"
+          >
+            Get the More Powerful With Hostez Website Hosting Plans
+          </h2>
+<!-- pricing -->
+          <div class="feature__pricing grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-[2rem] ">
+            <div class="feature__pricing--details group">
+              <img
+                src="./img/pricing-icon-01.png"
+                alt="wordpresslogo"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
+                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
+                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">67.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
+                
+              </div>
+              <h4 class="text[24px] mt-[1rem] ">Wordpress Hosting</h4>
+              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <a
+                href=""
+                class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
+                >Get Started
+                <i
+                  class="fa-solid fa-arrow-up fa-rotate-by text-blue group-hover:text-light ml-[0.5rem]"
+                  style="--fa-rotate-angle: 45deg"
+                ></i
+              ></a>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>10 MySQL Database</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>6GB SSD Storage</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Money Back Gauranty</p>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Automatic Backup System</p>
+              </div>
+            </div>
+
+            <div class="feature__pricing--details group">
+              <img
+                src="./img/pricing-icon-02.png"
+                alt="wordpresslogo"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
+                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
+                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">76.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
+                
+              </div>
+              <h4 class="text[24px] mt-[1rem] ">Dedicated Hosting</h4>
+              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <a
+                href=""
+                class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
+                >Get Started
+                <i
+                  class="fa-solid fa-arrow-up fa-rotate-by text-blue group-hover:text-light ml-[0.5rem]"
+                  style="--fa-rotate-angle: 45deg"
+                ></i
+              ></a>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>10 MySQL Database</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>6GB SSD Storage</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Money Back Gauranty</p>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Automatic Backup System</p>
+              </div>
+            </div>
+
+            <div class="feature__pricing--details group">
+              <img
+                src="./img/pricing-icon-03.png"
+                alt="wordpresslogo"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
+                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
+                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">87.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
+                
+              </div>
+              <h4 class="text[24px] mt-[1rem] ">VPS Hosting</h4>
+              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <a
+                href=""
+                class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
+                >Get Started
+                <i
+                  class="fa-solid fa-arrow-up fa-rotate-by text-blue group-hover:text-light ml-[0.5rem]"
+                  style="--fa-rotate-angle: 45deg"
+                ></i
+              ></a>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>10 MySQL Database</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>6GB SSD Storage</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Money Back Gauranty</p>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Automatic Backup System</p>
+              </div>
+            </div>
+
+            <div class="feature__pricing--details group">
+              <img
+                src="./img/pricing-icon-04.png"
+                alt="wordpresslogo"
+                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+              />
+              <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
+                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
+                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">67.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
+                
+              </div>
+              <h4 class="text[24px] mt-[1rem] ">Joomla Hosting</h4>
+              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <a
+                href=""
+                class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
+                >Get Started
+                <i
+                  class="fa-solid fa-arrow-up fa-rotate-by text-blue group-hover:text-light ml-[0.5rem]"
+                  style="--fa-rotate-angle: 45deg"
+                ></i
+              ></a>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>10 MySQL Database</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>6GB SSD Storage</p>
+              </div>
+              <div class="flex gap-2 mb-[1rem]">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Money Back Gauranty</p>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="./img/icon.png"
+                  alt="check-icon"
+                  class="w-[1rem] h-[1rem]"
+                />
+                <p>Automatic Backup System</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="homeAbout py-[5rem]  text-gray-400 font-mulish">
+  <div class="container">
+    <div class="homeAbout__wrapper flex flex-col gap-[3rem]">
+      <div class="homeAbout__image">
+        <img src="./img/about-thumb.png" alt="about-thumb">
+      </div>
+      <div>
+        <h4 class="text-[17px] md:text-[35px] lg:text-[40px] max-w-[20rem] text-darkblue">We're Most Powerful and Best Hosting Solution Agency</h4>
+        <div class="flex gap-4">
+          <img src="./img/about_icon.png" alt="check-icon" class="w-[1.5rem] h-[1.5rem]">
+          <p>Proactively scale functionalized initiatives with emerging ideas.</p>
+        </div>
+        <div class="flex gap-4">
+          <img src="./img/about_icon2.png" alt="check-icon" class="w-[1.5rem] h-[1.5rem]">
+          <p>Collaboratively formulate principle-centered users and revolutionary human capital. Progressively evolve</p>
+        </div>
+        <div class="flex gap-4">
+          <img src="./img/about_icon.png" alt="check-icon" class="w-[1.5rem] h-[1.5rem]">
+          <p>Dramatically pursue cooperative materials vis-a-vis flexible technology. Credibly fashion turnkey internal hosting done</p>
+        </div>
+        <div>
+          <div>
+            <h3>85% <i class="fa-sharp fa-solid fa-arrow-trend-up"></i></h3>
+            <p>Customers Websites protects By Hostlux Server</p>
+          </div>
+          <div>
+            <h3>TM+ <i class="fa-sharp fa-solid fa-arrow-trend-up"></i></h3>
+            <p>Customers Websites protects By Hostlux Server</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

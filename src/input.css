@@ -1,23 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  p {
+    @apply text-sm;
+  }
 }
 @layer components {
   .container {
     @apply max-w-[98rem] w-full mx-auto px-[1.5rem];
   }
+  .header {
+    @apply lg:fixed lg:w-[100vw] relative lg:bg-transparent bg-masul font-mulish  md:border-b-[0.1px] border-gray-50;
+  }
+  .burger__menu span {
+    @apply block w-[20px] h-[3.5px] bg-light cursor-pointer;
+  }
+  .burger__menu span:nth-child(2) {
+    @apply my-[2.5px];
+  }
+  .burger__menu.open span:nth-child(2) {
+    @apply opacity-0;
+  }
+  .burger__menu.open span:first-child {
+    @apply transform translate-y-[4px] rotate-[225deg];
+  }
+  .burger__menu.open span:last-child {
+    @apply transform translate-y-[-8px] rotate-[-225deg];
+  }
+  .header__action {
+    @apply lg:hidden  absolute text-black  bg-light w-[100vw] h-[0vh] transition-all duration-500  ease-in-out overflow-hidden;
+  }
+  .header__action.open {
+    @apply top-[3.8rem] md:h-[40vh] h-[39vh] transition-all duration-500  ease-in-out;
+  }
+  .header__navm {
+    @apply text-left text-[14px];
+  }
+  .header__navm li {
+    @apply p-[6px] border-b-[1px] border-gray-200 py-[17px] md:py-[18px];
+  }
+  .header__navm li:last-child {
+    @apply border-none;
+  }
+  .header__navm li a {
+    @apply ml-[2rem];
+  }
+
+  /* features */
+  .feature__choice--details {
+    @apply bg-white p-[2.5rem] rounded-lg mt-[-2rem] my-[2rem] border-b-4  border-light hover:transition-all hover:duration-700 ease-in-out hover:border-b-4 hover:border-lightblue;
+  }
+  .feature__choice--details h3 {
+    @apply mt-[1rem] text-[clamp(16px,4vw,20px)] font-semibold;
+  }
+  /* pricing */
+  .feature__pricing--details {
+    @apply bg-white p-[2.5rem] mt-[-2rem] my-[2rem] border-t-4  border-light hover:transition-all hover:duration-700 ease-in-out hover:border-t-4 hover:border-lightblue;
+  }
 }
 @layer utilities {
   .btn {
-    @apply inline-block text-light py-[1rem] px-[2.5rem] bg-transparent 
+    @apply inline-block text-light py-[1rem] px-[2rem] bg-transparent;
   }
   .btn.bg--blue {
-    @apply inline-block text-light py-[1rem] px-[2.5rem] bg-gradient-to-r from-buttonDarkBlue to-buttonLightBlue rounded-md hover:bg-gradient-to-r hover:from-buttonLightOrange hover:to-buttonDarkOrange
+    @apply text-light bg-gradient-to-r from-buttonDarkBlue to-buttonLightBlue rounded-md;
   }
-
+  .btn.bg--border {
+    @apply bg-light border-[0.5px] border-lightblue text-darkblue rounded-md;
+  }
 }
