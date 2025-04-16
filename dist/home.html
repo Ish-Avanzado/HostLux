@@ -29,7 +29,7 @@
           </div>
           <div class="flex flex-row gap-[3rem] items-center">
             <div class="header__navd lg:block md:hidden hidden">
-              <ul class="lg:flex lg:flex-row lg:gap-[3rem] lg:text-[16px]">
+              <ul class="lg:flex lg:flex-row lg:gap-[3rem] lg:text-base">
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Domain</a></li>
@@ -95,7 +95,9 @@
           class="homeBanner__wrapper lg:flex lg:flex-row lg:justify-between lg:items-center flex flex-col md:items-start pt-[10rem]"
         >
           <div class="md:pl-[1rem]">
-            <div class="flex gap-2">
+            <div
+              class="flex gap-2 bg-blueOverlay max-w-[15rem] p-[0.5rem] rounded-sm"
+            >
               <img
                 src="./img/icon.png"
                 alt="check-icon"
@@ -138,7 +140,9 @@
       </div>
     </section>
 
-    <section class="feature bg-bggray font-mulish text-darkblue pb-[5rem]">
+    <section
+      class="feature bg-pricing bg-cover bg-no-repeat lg:w-[100vw] lg:h-[65rem] md:h-[115rem] h-[215rem] font-mulish text-darkblue pb-[5rem]"
+    >
       <div class="container">
         <div class="feature__wrapper">
           <div
@@ -148,7 +152,7 @@
               <img
                 src="./img/feature-icon_01.png"
                 alt="feature-icon"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <h3>Safe and Secured</h3>
             </div>
@@ -156,7 +160,7 @@
               <img
                 src="./img/feature-icon_02.png"
                 alt="feature-icon"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <h3>99.90% Uptime</h3>
             </div>
@@ -164,7 +168,7 @@
               <img
                 src="./img/feature-icon_03.png"
                 alt="feature-icon"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <h3>Autometic Update</h3>
             </div>
@@ -172,31 +176,43 @@
               <img
                 src="./img/feature-icon_04.png"
                 alt="feature-icon"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <h3>Speed Gauranty</h3>
             </div>
           </div>
           <h2
-            class="text-center font-urbanist max-w-[18rem] lg:max-w-[40rem] md:max-w-[40rem] m-auto lg:text-[40px] md:text-[35px] text-[17px] py-[5rem]"
+            class="text-center font-urbanist max-w-[18rem] lg:max-w-[40rem] md:max-w-[40rem] m-auto lg:text-[40px] md:text-[35px] text-[17px] pt-[5rem] pb-[2rem]"
           >
             Get the More Powerful With Hostez Website Hosting Plans
           </h2>
-<!-- pricing -->
-          <div class="feature__pricing grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-[2rem] ">
+          <!-- pricing -->
+          <div
+            class="feature__pricing grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-[2rem]"
+          >
             <div class="feature__pricing--details group">
               <img
                 src="./img/pricing-icon-01.png"
                 alt="wordpresslogo"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
-                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
-                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">67.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
-                
+                <h4
+                  class="text-blue mt[-1rem] group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[18px]"
+                >
+                  $
+                </h4>
+                <h2
+                  class="text-blue group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[clamp(18px,8vw,24px)]"
+                >
+                  67.20
+                  <span class="text-gray-400 font-light text-base">/ Mo</span>
+                </h2>
               </div>
-              <h4 class="text[24px] mt-[1rem] ">Wordpress Hosting</h4>
-              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <h4 class="text[24px] mt-[1rem]">Wordpress Hosting</h4>
+              <p class="text-gray-400 font-light text-base">
+                Continually optomize web host
+              </p>
               <a
                 href=""
                 class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
@@ -244,15 +260,25 @@
               <img
                 src="./img/pricing-icon-02.png"
                 alt="wordpresslogo"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
-                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
-                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">76.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
-                
+                <h4
+                  class="text-blue mt[-1rem] group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[18px]"
+                >
+                  $
+                </h4>
+                <h2
+                  class="text-blue group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[clamp(18px,8vw,24px)]"
+                >
+                  76.20
+                  <span class="text-gray-400 font-light text-base">/ Mo</span>
+                </h2>
               </div>
-              <h4 class="text[24px] mt-[1rem] ">Dedicated Hosting</h4>
-              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <h4 class="text[24px] mt-[1rem]">Dedicated Hosting</h4>
+              <p class="text-gray-400 font-light text-base">
+                Continuallu optomize web host
+              </p>
               <a
                 href=""
                 class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
@@ -300,15 +326,25 @@
               <img
                 src="./img/pricing-icon-03.png"
                 alt="wordpresslogo"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
-                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
-                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">87.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
-                
+                <h4
+                  class="text-blue mt[-1rem] group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[18px]"
+                >
+                  $
+                </h4>
+                <h2
+                  class="text-blue group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[clamp(18px,8vw,24px)]"
+                >
+                  87.20
+                  <span class="text-gray-400 font-light text-base">/ Mo</span>
+                </h2>
               </div>
-              <h4 class="text[24px] mt-[1rem] ">VPS Hosting</h4>
-              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <h4 class="text[24px] mt-[1rem]">VPS Hosting</h4>
+              <p class="text-gray-400 font-light text-base">
+                Continuallu optomize web host
+              </p>
               <a
                 href=""
                 class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
@@ -356,15 +392,25 @@
               <img
                 src="./img/pricing-icon-04.png"
                 alt="wordpresslogo"
-                class="group-hover:animate-bounce group-hover:w-15 group-hover:h-15"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
               />
               <div class="flex gap-2 border-b-[1px] border-gray-200 py-[10px]">
-                <h4 class="text-blue mt[-1rem] group-hover:text-orange text-[18px]">$</h4>
-                <h2 class=" text-blue group-hover:text-orange text-[clamp(18px,8vw,24px)]">67.20  <span class="text-gray-400 font-light text-base">/ Mo</span></h2>
-                
+                <h4
+                  class="text-blue mt[-1rem] group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[18px]"
+                >
+                  $
+                </h4>
+                <h2
+                  class="text-blue group-hover:text-orange group-hover:transition-all group-hover:duration-700 ease-in-out text-[clamp(18px,8vw,24px)]"
+                >
+                  67.20
+                  <span class="text-gray-400 font-light text-base">/ Mo</span>
+                </h2>
               </div>
-              <h4 class="text[24px] mt-[1rem] ">Joomla Hosting</h4>
-              <p class="text-gray-400 font-light text-base">Continuallu optomize web host</p>
+              <h4 class="text[24px] mt-[1rem]">Joomla Hosting</h4>
+              <p class="text-gray-400 font-light text-base">
+                Continuallu optomize web host
+              </p>
               <a
                 href=""
                 class="btn bg--border group-hover:bg-gradient-to-r group-hover:from-buttonDarkBlue group-hover:to-buttonLightBlue group-hover:text-light my-[1.5rem]"
@@ -412,40 +458,293 @@
       </div>
     </section>
 
-<section class="homeAbout py-[5rem]  text-gray-400 font-mulish">
-  <div class="container">
-    <div class="homeAbout__wrapper flex flex-col gap-[3rem]">
-      <div class="homeAbout__image">
-        <img src="./img/about-thumb.png" alt="about-thumb">
-      </div>
-      <div>
-        <h4 class="text-[17px] md:text-[35px] lg:text-[40px] max-w-[20rem] text-darkblue">We're Most Powerful and Best Hosting Solution Agency</h4>
-        <div class="flex gap-4">
-          <img src="./img/about_icon.png" alt="check-icon" class="w-[1.5rem] h-[1.5rem]">
-          <p>Proactively scale functionalized initiatives with emerging ideas.</p>
-        </div>
-        <div class="flex gap-4">
-          <img src="./img/about_icon2.png" alt="check-icon" class="w-[1.5rem] h-[1.5rem]">
-          <p>Collaboratively formulate principle-centered users and revolutionary human capital. Progressively evolve</p>
-        </div>
-        <div class="flex gap-4">
-          <img src="./img/about_icon.png" alt="check-icon" class="w-[1.5rem] h-[1.5rem]">
-          <p>Dramatically pursue cooperative materials vis-a-vis flexible technology. Credibly fashion turnkey internal hosting done</p>
-        </div>
-        <div>
-          <div>
-            <h3>85% <i class="fa-sharp fa-solid fa-arrow-trend-up"></i></h3>
-            <p>Customers Websites protects By Hostlux Server</p>
+    <section class="homeAbout bg-bggray py-[5rem] text-gray-400 font-mulish">
+      <div class="container">
+        <div
+          class="homeAbout__wrapper flex flex-col lg:flex lg:flex-row gap-[3rem]"
+        >
+          <div class="homeAbout__image">
+            <img src="./img/about-thumb.png" alt="about-thumb" />
           </div>
           <div>
-            <h3>TM+ <i class="fa-sharp fa-solid fa-arrow-trend-up"></i></h3>
-            <p>Customers Websites protects By Hostlux Server</p>
+            <h4
+              class="text-[17px] md:text-[35px] lg:text-[40px] max-w-[20rem] md:max-w-[40rem] text-darkblue mb-[2rem]"
+            >
+              We're Most Powerful and Best Hosting Solution Agency
+            </h4>
+            <div class="flex gap-4">
+              <img
+                src="./img/about_icon.png"
+                alt="check-icon"
+                class="w-[1.5rem] h-[1.5rem]"
+              />
+              <p class="text-base">
+                Proactively scale functionalized initiatives with emerging
+                ideas.
+              </p>
+            </div>
+            <div class="flex gap-4 my-[1rem]">
+              <img
+                src="./img/about_icon2.png"
+                alt="check-icon"
+                class="w-[1.5rem] h-[1.5rem]"
+              />
+              <p class="text-base lg:max-w-[35rem]">
+                Collaboratively formulate principle-centered users and
+                revolutionary human capital. Progressively evolve
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="./img/about_icon.png"
+                alt="check-icon"
+                class="w-[1.5rem] h-[1.5rem]"
+              />
+              <p class="text-base lg:max-w-[35rem]">
+                Dramatically pursue cooperative materials vis-a-vis flexible
+                technology. Credibly fashion turnkey internal hosting done
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid md:grid-cols-2 md:gap-4">
+              <div class="homeAbout__details group">
+                <h3
+                  class="text-[42px] text-blue group-hover:transition-all group-hover:duration-700 ease-in-out group-hover:text-orange"
+                >
+                  85%
+                  <i
+                    class="fa-sharp fa-solid fa-arrow-trend-up text-[22px] text-green-500"
+                  ></i>
+                </h3>
+                <p class="md:max-w-[15rem]">
+                  Customers Websites protects By Hostlux Server
+                </p>
+              </div>
+              <div class="homeAbout__details group">
+                <h3
+                  class="text-[42px] text-blue group-hover:transition-all group-hover:duration-700 ease-in-out group-hover:text-orange"
+                >
+                  TM+
+                  <i
+                    class="fa-sharp fa-solid fa-arrow-trend-up text-[22px] text-green-500"
+                  ></i>
+                </h3>
+                <p class="md:max-w-[15rem]">
+                  Customers Websites protects By Hostlux Server
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <section
+      class="homeCategory font-mulish bg-bgcategory bg-cover bg-no-repeat w-[100vw] lg:h-[30rem] md:h-[45rem] h-[60rem] py-[5rem] text-darkblue"
+    >
+      <div class="container">
+        <div class="homeCategory__wrapper">
+          <div>
+            <img
+              src="./img/pricin-shape2.png"
+              alt=""
+              class="md:block hidden animate-bounce absolute"
+            />
+            <h2
+              class="text-[clamp(25px,4vw,36px)] text-center text-light mb-[3rem]"
+            >
+              More than 100+ Apps & Integrations
+            </h2>
+            <img
+              src="./img/category_shape3.png"
+              alt=""
+              class="md:block hidden animate-bounce absolute right-0"
+            />
+          </div>
+
+          <div
+            class="homeCategory__details grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:m-auto lg:gap-4 md:gap-4"
+          >
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon01.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">Wordpress Hosting</h3>
+            </div>
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon02.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">Joomla Hosting</h3>
+            </div>
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon03.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">Durpal Hosting</h3>
+            </div>
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon04.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">Mobile Hosting</h3>
+            </div>
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon05.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">Ace Net Hosting</h3>
+            </div>
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon06.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">ProLink Hosting</h3>
+            </div>
+            <div class="homeCategory__details--card group">
+              <img
+                src="./img/category-icon07.png"
+                alt="icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15"
+              />
+              <h3 class="lg:text-[18px] text-[20px]">WebZen Hosting</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="homeFeature bg-bgfeature bg-cover bg-no-repeat w-[100vw] lg:h-[60rem] md:h-[80rem] h-[150rem] py-[5rem]"
+    >
+      <div class="container">
+        <div class="homeFeature__wrapper">
+          <h2
+            class="font-urbanist text-center text-darkblue text-[clamp(25px,4vw,36px)]"
+          >
+            Hostlux Powerful Features
+          </h2>
+          <p class="font-mulish text-base text-center text-gray-400 mb-[5rem]">
+            Collaboratively formulate principle-centered users and revolutionary
+            human capital. Progressively evolve domain and hosting
+          </p>
+          <div
+            class="homeFeature__choice lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-[2rem] grid grid-cols-1 text-center"
+          >
+            <div class="homeFeature__choice--details group">
+              <img
+                src="./img/feature-icon01.jpg"
+                alt="feature-icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15 place-self-center"
+              />
+              <h3 class="text-[clamp(16px,4vw,20px)] my-[1.5rem]">
+                Maximum Performance
+              </h3>
+              <p class="font-mulish text-base text-center text-gray-400">
+                Collaboratively formulate principle-centered capital.
+                Progressively evolve users and it’s revolutionary human
+              </p>
+            </div>
+            <div class="homeFeature__choice--details group">
+              <img
+                src="./img/feature-icon02.jpg"
+                alt="feature-icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15 place-self-center"
+              />
+              <h3 class="text-[clamp(16px,4vw,20px)] my-[1.5rem]">
+                Powerful Security
+              </h3>
+              <p class="font-mulish text-base text-center text-gray-400">
+                Collaboratively formulate principle-centered capital.
+                Progressively evolve users and it’s revolutionary human
+              </p>
+            </div>
+            <div class="homeFeature__choice--details group">
+              <img
+                src="./img/feature-icon03.jpg"
+                alt="feature-icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15 place-self-center"
+              />
+              <h3 class="text-[clamp(16px,4vw,20px)] my-[1.5rem]">
+                Moneyback Gauranty
+              </h3>
+              <p class="font-mulish text-base text-center text-gray-400">
+                Collaboratively formulate principle-centered capital.
+                Progressively evolve users and it’s revolutionary human
+              </p>
+            </div>
+            <div class="homeFeature__choice--details group">
+              <img
+                src="./img/feature-icon04.jpg"
+                alt="feature-icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15 place-self-center"
+              />
+              <h3 class="text-[clamp(16px,4vw,20px)] my-[1.5rem]">
+                Speed Optimization
+              </h3>
+              <p class="font-mulish text-base text-center text-gray-400">
+                Collaboratively formulate principle-centered capital.
+                Progressively evolve users and it’s revolutionary human
+              </p>
+            </div>
+            <div class="homeFeature__choice--details group">
+              <img
+                src="./img/feature-icon05.jpg"
+                alt="feature-icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15 place-self-center"
+              />
+              <h3 class="text-[clamp(16px,4vw,20px)] my-[1.5rem]">
+                FTP Supported
+              </h3>
+              <p class="font-mulish text-base text-center text-gray-400">
+                Collaboratively formulate principle-centered capital.
+                Progressively evolve users and it’s revolutionary human
+              </p>
+            </div>
+            <div class="homeFeature__choice--details group">
+              <img
+                src="./img/feature-icon06.jpg"
+                alt="feature-icon"
+                class="group-hover:animate-onebounce group-hover:w-15 group-hover:h-15 place-self-center"
+              />
+              <h3 class="text-[clamp(16px,4vw,20px)] my-[1.5rem]">
+                Free Supports 24/7
+              </h3>
+              <p class="font-mulish text-base text-center text-gray-400">
+                Collaboratively formulate principle-centered capital.
+                Progressively evolve users and it’s revolutionary human
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="homeProved bg-bgProved bg-cover bg-no-repeat w-[100vw] lg:h-[40rem] md:h-[60rem] h-[80rem] py-[5rem] text-light">
+      <div class="container">
+        <div class="homeProved__wrapper flex justify-center">
+          <div class="homeProved__text">
+            <h2 class="text-[clamp(25px,4vw,36px)] ">Migrating Hosting Another Hosting Server’s</h2>
+            <p class="text-base max-w-[50rem] ">Collaboratively formulate principle-centered users and revolutionary human capital. Progressively evolve domain and hosting pursue parallel platforms with inexpensive expertise completely</p>
+            <a href="" class="btn">Contact with Us</a>
+          </div>
+          <div class="homeProved__image">
+            <img src="./img/blog_thumb03.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
