@@ -44,7 +44,7 @@
     @apply lg:hidden  absolute text-black  bg-light w-[100vw] h-[0vh] transition-all duration-500  ease-in-out overflow-hidden;
   }
   .header__action.open {
-    @apply top-[3.8rem] md:h-[40vh] h-[39vh] transition-all duration-500  ease-in-out;
+    @apply top-[3.8rem] md:h-[22rem] h-[21rem] transition-all duration-500  ease-in-out;
   }
   .header__navm {
     @apply text-left text-[14px];

@@ -690,7 +690,7 @@ p{
 
 .header__action.open{
   top: 3.8rem;
-  height: 39vh;
+  height: 21rem;
   transition-property: all;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -698,7 +698,7 @@ p{
 
 @media (min-width: 768px){
   .header__action.open{
-    height: 40vh;
+    height: 22rem;
   }
 }
 
