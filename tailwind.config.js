@@ -15,6 +15,7 @@ module.exports = {
         bgcategory: "url(../dist/img/category.jpg)",
         bgfeature: "url(../dist/img/feature_bg.jpg)",
         bgProved: "url(../dist/img/proved-bg.jpg)",
+        bgSlider: "url(../dist/img/testi_bg.jpg)",
       },
       colors: {
         dark: "#2b2b2b",

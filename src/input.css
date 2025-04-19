@@ -94,12 +94,6 @@
     @apply opacity-100 transform translate-y-[-4px] rotate-[90deg];
   }
 
-  .faq__item--choice p {
-    @apply max-h-[-0rem] overflow-hidden transition-all;
-  }
-  .faq__item--choice p.open {
-    @apply max-h-[100%] overflow-hidden transition-all;
-  }
 }
 @layer utilities {
   .btn {
