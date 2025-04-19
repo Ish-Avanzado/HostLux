@@ -846,6 +846,43 @@ p{
   transition-duration: 700ms;
 }
 
+/* faq */
+
+.faq__item--choice span{
+  display: block;
+  height: 2px;
+  width: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 43 43 / var(--tw-bg-opacity, 1));
+}
+
+.faq__item--choice span:last-child{
+  opacity: 0;
+}
+
+.faq__item--choice span:last-child.open{
+  --tw-translate-y: -4px;
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+
+.faq__item--choice p{
+  max-height: -0rem;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.faq__item--choice p.open{
+  max-height: 100%;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .absolute{
   position: absolute;
 }
@@ -893,6 +930,10 @@ p{
   margin-left: 0.5rem;
 }
 
+.mt-\[1\.5rem\]{
+  margin-top: 1.5rem;
+}
+
 .mt-\[1rem\]{
   margin-top: 1rem;
 }
@@ -933,16 +974,20 @@ p{
   height: 215rem;
 }
 
+.h-\[25rem\]{
+  height: 25rem;
+}
+
+.h-\[55rem\]{
+  height: 55rem;
+}
+
 .h-\[60rem\]{
   height: 60rem;
 }
 
 .h-\[70rem\]{
   height: 70rem;
-}
-
-.h-\[80rem\]{
-  height: 80rem;
 }
 
 .w-\[1\.5rem\]{
@@ -955,6 +1000,10 @@ p{
 
 .w-\[1rem\]{
   width: 1rem;
+}
+
+.w-\[35rem\]{
+  width: 35rem;
 }
 
 .w-\[9rem\]{
@@ -971,10 +1020,6 @@ p{
 
 .max-w-\[20rem\]{
   max-width: 20rem;
-}
-
-.max-w-\[50rem\]{
-  max-width: 50rem;
 }
 
 .grow{
@@ -1011,10 +1056,6 @@ p{
 
 .items-center{
   align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
 }
 
 .justify-between{
@@ -1095,6 +1136,11 @@ p{
   background-repeat: no-repeat;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1102,6 +1148,11 @@ p{
 
 .p-\[0\.5rem\]{
   padding: 0.5rem;
+}
+
+.py-\[1\.5rem\]{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-\[10px\]{
@@ -1173,6 +1224,10 @@ p{
 
 .text-\[42px\]{
   font-size: 42px;
+}
+
+.text-\[clamp\(16px\2c 3vw\2c 24px\)\]{
+  font-size: clamp(16px,3vw,24px);
 }
 
 .text-\[clamp\(16px\2c 4vw\2c 20px\)\]{
@@ -1258,6 +1313,11 @@ p{
   color: rgb(4 19 65 / var(--tw-text-opacity, 1));
 }
 
+.hover\:bg-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-gradient-to-r:hover{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1270,6 +1330,11 @@ p{
 
 .hover\:to-buttonDarkOrange:hover{
   --tw-gradient-to: #ff630c var(--tw-gradient-to-position);
+}
+
+.hover\:text-orange:hover{
+  --tw-text-opacity: 1;
+  color: rgb(253 135 47 / var(--tw-text-opacity, 1));
 }
 
 @keyframes bounce{
@@ -1355,10 +1420,6 @@ p{
     height: 90rem;
   }
 
-  .md\:h-\[60rem\]{
-    height: 60rem;
-  }
-
   .md\:max-w-\[15rem\]{
     max-width: 15rem;
   }
@@ -1437,16 +1498,16 @@ p{
     height: 30rem;
   }
 
+  .lg\:h-\[33rem\]{
+    height: 33rem;
+  }
+
   .lg\:h-\[60rem\]{
     height: 60rem;
   }
 
   .lg\:h-\[65rem\]{
     height: 65rem;
-  }
-
-  .lg\:h-\[40rem\]{
-    height: 40rem;
   }
 
   .lg\:w-\[100vw\]{
@@ -1479,6 +1540,10 @@ p{
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:justify-between{
