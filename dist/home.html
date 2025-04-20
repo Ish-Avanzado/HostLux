@@ -18,7 +18,7 @@
     <header class="header">
       <div class="container">
         <div
-          class="header__wrapper text-light flex items-center justify-between py-[1rem]"
+          class="header__wrapper text-light flex items-center justify-between "
         >
           <div class="header__branding">
             <img
@@ -31,8 +31,8 @@
             <div class="header__navd lg:block md:hidden hidden">
               <ul class="lg:flex lg:flex-row lg:gap-[3rem] lg:text-base">
                 <li><a href="./home.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Domain</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./domain.html">Domain</a></li>
                 <li><a href="">Hosting</a></li>
                 <li><a href="">Page</a></li>
                 <li><a href="">Contact</a></li>
@@ -74,8 +74,8 @@
           <li class="flex justify-between">
             <a href="./home.html">Home</a> <i class="fa-solid fa-plus"></i>
           </li>
-          <li><a href="">About</a></li>
-          <li><a href="">Domain</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./domain.html">Domain</a></li>
           <li class="flex justify-between">
             <a href="">Hosting</a><i class="fa-solid fa-plus"></i>
           </li>
@@ -600,6 +600,10 @@
               />
               <h3 class="lg:text-[18px] text-[20px]">Mobile Hosting</h3>
             </div>
+          </div>
+          <div
+            class="homeCategory__details grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:m-auto lg:gap-4 lg:max-w-[70rem] md:gap-4 md:mt-[1rem]"
+          >
             <div data-aos="fade-up" class="homeCategory__details--card group">
               <img
                 src="./img/category-icon05.png"
@@ -743,7 +747,7 @@
       class="homeProved bg-bgProved bg-cover bg-no-repeat w-[100vw] lg:h-[33rem] h-[55rem] py-[5rem] text-light"
     >
       <div class="container">
-        <div class="homeProved__wrapper lg:flex lg:justify-center">
+        <div data-aos="fade-up" class="homeProved__wrapper lg:flex lg:justify-center">
           <div class="homeProved__text">
             <h2
               class="text-[clamp(25px,4vw,36px)] font-urbanist max-w-[20rem] md:max-w-[30rem]"
@@ -795,7 +799,11 @@
     <section class="faq py-[5rem]">
       <div class="container">
         <div class="faq__wrapper lg:flex lg:gap-[3rem]">
-          <img src="./img/faq-tumb.png" alt="faq-image" />
+          <img
+            src="./img/faq-tumb.png"
+            alt="faq-image"
+            class="object-contain"
+          />
           <div class="faq__item">
             <h2 class="text-[clamp(25px,4vw,36px)] font-urbanist mt-[1.5rem]">
               Get Started Fast & Easily with Best Hosting
@@ -805,15 +813,13 @@
               revolutionary human new capital. Progressively evolve domain and
               hosting service
             </p>
-            <div class="faq__item--choice">
-              <div
-                class="flex items-center justify-between border-b-[1px] border-gray-200 py-[1rem]"
+            <div class="faq__choice">
+              <h4
+                class="font-urbanist text-[clamp(16px,3vw,24px)] flex items-center justify-between border-b-[1px] py-[1rem]"
               >
-                <h4 class="font-urbanist text-[clamp(16px,3vw,24px)]">
-                  How to Transfer Hosting from Server?
-                </h4>
+                How to Transfer Hosting from Server?
                 <div><span></span><span></span></div>
-              </div>
+              </h4>
               <p class="text-base font-mulish text-gray-400 py-[1.5rem]">
                 Collaboratively formulate principle-centered users and capital
                 then evolve domain recaptiualize front-end results via viral
@@ -821,15 +827,13 @@
                 e-
               </p>
             </div>
-            <div class="faq__item--choice">
-              <div
-                class="flex items-center justify-between border-b-[1px] border-gray-200 py-[1rem]"
+            <div class="faq__choice">
+              <h4
+                class="font-urbanist text-[clamp(16px,3vw,24px)] flex items-center justify-between border-b-[1px] py-[1rem]"
               >
-                <h4 class="font-urbanist text-[clamp(16px,3vw,24px)]">
-                  How to Install WP Theme on a Hosting cPanel?
-                </h4>
+                How to Install WP Theme on a Hosting cPanel?
                 <div><span></span><span></span></div>
-              </div>
+              </h4>
               <p class="text-base font-mulish text-gray-400 py-[1.5rem]">
                 Collaboratively formulate principle-centered users and capital
                 then evolve domain recaptiualize front-end results via viral
@@ -837,15 +841,13 @@
                 e-
               </p>
             </div>
-            <div class="faq__item--choice">
-              <div
-                class="flex items-center justify-between border-b-[1px] border-gray-200 py-[1rem]"
+            <div class="faq__choice">
+              <h4
+                class="font-urbanist text-[clamp(16px,3vw,24px)] flex items-center justify-between border-b-[1px] py-[1rem]"
               >
-                <h4 class="font-urbanist text-[clamp(16px,3vw,24px)]">
-                  What’s are the Best Hosting Server - 2025?
-                </h4>
+                What’s are the Best Hosting Server - 2025?
                 <div><span></span><span></span></div>
-              </div>
+              </h4>
               <p class="text-base font-mulish text-gray-400 py-[1.5rem]">
                 Collaboratively formulate principle-centered users and capital
                 then evolve domain recaptiualize front-end results via viral
@@ -981,7 +983,7 @@
     </section>
     <section class="brands py-[5rem]">
       <div class="container">
-        <div class="brands__wrapper flex gap-[4rem] overflow-hidden">
+        <div class="brands__wrapper flex gap-[4rem] lg:justify-center overflow-hidden">
           <img
             src="./img/brand_01.png"
             alt="dromix-logo"
@@ -1015,9 +1017,9 @@
     >
       <div class="container">
         <div
-          class="footer__wrapper grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-flow-col-dense border-b-[1px]"
+          class="footer__wrapper grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row lg:justify-between border-b-[1px] pb-[2rem]"
         >
-          <div>
+          <div class="lg:max-w-[30rem]">
             <img src="./img/logo.png" alt="Host HostLux-logo" />
             <p class="text-base font-mulish py-[1.5rem]">
               Collaboratively formulate principle-centered users capital.
@@ -1029,7 +1031,7 @@
               ></span
               >Follow Us On
             </h5>
-            <ul class="footer__social flex gap-[1rem]">
+            <ul class="footer__social flex gap-2 mt-[1rem]">
               <li>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
               </li>
@@ -1099,7 +1101,7 @@
               </form>
               <a href="" class="btn bg--blue ml-[-8rem]">SUBSCRIBE</a>
             </div>
-            <h5 class="py-[1rem]">Payment Gateway</h5>
+            <h5 class="py-[1rem] font-urbanist text-[18px]">Payment Gateway</h5>
             <div class="flex flex-row gap-[1rem]">
               <img
                 src="./img/pyment-logo1.png"
@@ -1118,11 +1120,13 @@
               />
             </div>
           </div>
-          
         </div>
-        <p>Copyright 2025 Host LuxAll Rights Reserved</p>
+        <p class="py-[1rem] place-self-center">
+          Copyright 2025 Host LuxAll Rights Reserved
+        </p>
       </div>
     </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

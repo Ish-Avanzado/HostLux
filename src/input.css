@@ -23,7 +23,7 @@
     @apply max-w-[98rem] w-full mx-auto px-[1.5rem];
   }
   .header {
-    @apply lg:fixed lg:w-[100vw] relative lg:bg-transparent bg-masul font-mulish  md:border-b-[0.1px] border-gray-50;
+    @apply lg:fixed lg:w-[100vw] relative lg:bg-transparent bg-masul font-mulish  md:border-b-[0.1px] border-gray-50 py-[1rem] lg:py-[0rem];
   }
   .burger__menu span {
     @apply block w-[20px] h-[3.5px] bg-light cursor-pointer;
@@ -58,6 +58,9 @@
   .header__navm li a {
     @apply ml-[2rem];
   }
+  .header.bg{
+    @apply lg:bg-darkblue z-10
+  }
 
   /* features */
   .feature__choice--details {
@@ -84,16 +87,27 @@
   }
 
   /* faq */
-  .faq__item--choice span {
+  .faq__choice span {
     @apply block w-[10px] h-[2px] bg-dark;
   }
-  .faq__item--choice span:last-child {
-    @apply opacity-0;
+  .faq__choice span:last-child {
+    @apply opacity-0 transform translate-y-[-2px] rotate-[90deg];
   }
-  .faq__item--choice span:last-child.open {
-    @apply opacity-100 transform translate-y-[-4px] rotate-[90deg];
+  .faq__choice span:last-child.open {
+    @apply opacity-100;
   }
 
+  .faq__choice p {
+    @apply max-h-[0rem] overflow-hidden hidden transition-all ease-in-out duration-100;
+  }
+  .faq__choice p.open {
+    @apply max-h-[50rem] block transition-all ease-in-out;
+  }
+
+  /* footer social */
+  .footer__social i {
+    @apply flex place-content-center w-10 px-3.5 py-3 bg-blue rounded-full;
+  }
 }
 @layer utilities {
   .btn {

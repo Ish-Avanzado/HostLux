@@ -33,6 +33,7 @@ module.exports = {
         buttonLightBlue: "#1384ff",
         buttonDarkOrange: "#ff630c",
         buttonLightOrange: "#fe940d",
+        blueBanner: "#00149d",
       },
       animation: {
         onebounce: "bounce 0.5s 1",

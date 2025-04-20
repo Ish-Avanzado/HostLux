@@ -5,10 +5,23 @@ burger.addEventListener("click", () => {
   hNav.classList.toggle("open");
 });
 
-const faqs = document.querySelectorAll(".faq__item--choice h4");
+//header change color
+const hColor = document.querySelector(".header");
+window.addEventListener("scroll", () => {
+  window.console.log(scrollY);
+  if (window.scrollY >= 1) {
+    hColor.classList.add("bg");
+  } else {
+    hColor.classList.remove("bg");
+  }
+});
+
+// FAQs
+
+const faqs = document.querySelectorAll(".faq__choice h4");
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
-    faq.querySelector("i").classList.toggle("open");
+    faq.querySelector("span").classList.toggle("open");
     faq.nextElementSibling.classList.toggle("open");
   });
 });
