@@ -23,7 +23,7 @@
     @apply max-w-[98rem] w-full mx-auto px-[1.5rem];
   }
   .header {
-    @apply lg:fixed lg:w-[100vw] relative lg:bg-transparent bg-masul font-mulish  md:border-b-[0.1px] border-gray-50 py-[1rem] lg:py-[0rem];
+    @apply lg:fixed lg:w-[100vw] relative lg:bg-transparent bg-masul font-mulish  md:border-b-[0.1px] border-gray-50 py-[1rem];
   }
   .burger__menu span {
     @apply block w-[20px] h-[3.5px] bg-light cursor-pointer;
@@ -41,7 +41,7 @@
     @apply transform translate-y-[-8px] rotate-[-225deg];
   }
   .header__action {
-    @apply lg:hidden  absolute text-black  bg-light w-[100vw] h-[0vh] transition-all duration-500  ease-in-out overflow-hidden;
+    @apply lg:hidden  absolute text-black  bg-light w-[100%] h-[0vh] transition-all duration-500  ease-in-out overflow-hidden;
   }
   .header__action.open {
     @apply top-[3.8rem] md:h-[22rem] h-[21rem] transition-all duration-500  ease-in-out;
@@ -91,10 +91,10 @@
     @apply block w-[10px] h-[2px] bg-dark;
   }
   .faq__choice span:last-child {
-    @apply opacity-0 transform translate-y-[-2px] rotate-[90deg];
+    @apply opacity-100 transform translate-y-[-2px] rotate-[90deg];
   }
   .faq__choice span:last-child.open {
-    @apply opacity-100;
+    @apply opacity-0;
   }
 
   .faq__choice p {
@@ -118,5 +118,14 @@
   }
   .btn.bg--border {
     @apply bg-light border-[0.5px] border-lightblue text-darkblue rounded-md;
+  }
+  .btn.bg--orange {
+    @apply bg-gradient-to-r from-buttonDarkOrange to-buttonPink hover:bg-gradient-to-r hover:from-buttonLightOrange hover:to-buttonDarkOrange rounded-full;
+  }
+  .btn.bg--orangePure {
+    @apply bg-orange rounded-md;
+  }
+  .btn.bg--borderW {
+    @apply border-[2px] border-light rounded-md hover:text-orange hover:bg-light
   }
 }

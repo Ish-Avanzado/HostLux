@@ -17,6 +17,8 @@ module.exports = {
         bgProved: "url(../dist/img/proved-bg.jpg)",
         bgSlider: "url(../dist/img/testi_bg.jpg)",
         bgFooter: "url(../dist/img/footer_bg.jpg)",
+        bgBenifit: "url(../dist/img/choose_bg.jpg)",
+        bgDProved: "url(../dist/img/proved_bg.jpg)",
       },
       colors: {
         dark: "#2b2b2b",
@@ -33,10 +35,13 @@ module.exports = {
         buttonLightBlue: "#1384ff",
         buttonDarkOrange: "#ff630c",
         buttonLightOrange: "#fe940d",
+        buttonPink: "#fe135f",
         blueBanner: "#00149d",
+        purple: "#190e5d",
       },
       animation: {
         onebounce: "bounce 0.5s 1",
+        slowbounce: "bounce 4s infinite",
       },
     },
   },

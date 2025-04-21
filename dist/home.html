@@ -13,12 +13,16 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div
-          class="header__wrapper text-light flex items-center justify-between "
+          class="header__wrapper text-light flex items-center justify-between"
         >
           <div class="header__branding">
             <img
@@ -106,7 +110,7 @@
               <p>Best Performance Gauranted!</p>
             </div>
             <h1
-              class="lg:text-[56px] md:text-[50px] text-[30px] my-[2rem] lg:max-w-[40rem] md:max-w-[30rem] max-w-[20rem] lg:leading-[4rem] md:leading-[4rem]"
+              class="text-[clamp(25px,4vw,56px)] my-[2rem] lg:max-w-[40rem] md:max-w-[30rem] max-w-[20rem] lg:leading-[4rem] md:leading-[4rem]"
             >
               Easy and Managed Application Website Hosting Service
             </h1>
@@ -542,7 +546,7 @@
     </section>
 
     <section
-      class="homeCategory font-mulish bg-bgcategory bg-cover bg-no-repeat w-[100vw] lg:h-[30rem] md:h-[45rem] h-[60rem] py-[5rem] text-darkblue"
+      class="homeCategory font-mulish bg-bgcategory bg-cover bg-no-repeat w-[100%] lg:h-[30rem] md:h-[45rem] h-[60rem] py-[5rem] text-darkblue"
     >
       <div class="container">
         <div class="homeCategory__wrapper">
@@ -747,7 +751,10 @@
       class="homeProved bg-bgProved bg-cover bg-no-repeat w-[100vw] lg:h-[33rem] h-[55rem] py-[5rem] text-light"
     >
       <div class="container">
-        <div data-aos="fade-up" class="homeProved__wrapper lg:flex lg:justify-center">
+        <div
+          data-aos="fade-up"
+          class="homeProved__wrapper lg:flex lg:justify-center"
+        >
           <div class="homeProved__text">
             <h2
               class="text-[clamp(25px,4vw,36px)] font-urbanist max-w-[20rem] md:max-w-[30rem]"
@@ -764,7 +771,7 @@
             </p>
             <a
               href=""
-              class="btn bg--blue hover:text-orange hover:bg-light my-[1.5rem]"
+              class="btn bg--blue hover:text-orange hover:bg-gradient-to-r hover:from-light hover:to-light my-[1.5rem]"
               >Contact with Us</a
             >
           </div>
@@ -792,6 +799,130 @@
             human capital. Progressively evolve domain and hosting
           </p>
           <img src="./img/rating_thumb.png" alt="Trustpilot-logo" />
+          <div
+            class="homeSlider__slider"
+          >
+            <div
+              class="homeSlider__testimoial bg-blue text-light rounded-md mt-[2rem]"
+            >
+              <div class="homeSlider__testimonial--profile border-b-[1px]">
+                <div class="homeSlider__testimonial--profile-info p-[2rem]">
+                  <img src="./img/testi_author1.png" alt="James-profile" />
+                  <div>
+                    <h4 class="text-[20px]">James Velazquez</h4>
+                    <p class="text-base">CEO Founder</p>
+                  </div>
+                </div>
+                <p class="px-[2rem] pb-[2rem] text-base">
+                  Appropriately maintain installed base board sustainable
+                  product. Compellingly dissemins diverse methods empowerment
+                  whereas strategic theme areas
+                </p>
+              </div>
+              <div
+                class="homeSlider__testimonial--rating p-[2rem] flex justify-between"
+              >
+                <img src="./img/testi-brand1.png" alt="google-logo" />
+                <div class="text-light">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="homeSlider__testimoial bg-blue text-light rounded-md mt-[2rem]"
+            >
+              <div class="homeSlider__testimonial--profile border-b-[1px]">
+                <div class="homeSlider__testimonial--profile-info p-[2rem]">
+                  <img src="./img/testi_author2.png" alt="James-profile" />
+                  <div>
+                    <h4 class="text-[20px]">Tina R. Martinez</h4>
+                    <p class="text-base">Data Engineer</p>
+                  </div>
+                </div>
+                <p class="px-[2rem] pb-[2rem] text-base">
+                  Appropriately maintain installed base board sustainable
+                  product. Compellingly dissemins diverse methods empowerment
+                  whereas strategic theme areas
+                </p>
+              </div>
+              <div
+                class="homeSlider__testimonial--rating p-[2rem] flex justify-between"
+              >
+                <img src="./img/testi-brand1.png" alt="google-logo" />
+                <div class="text-light">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="homeSlider__testimoial bg-blue text-light rounded-md mt-[2rem]"
+            >
+              <div class="homeSlider__testimonial--profile border-b-[1px]">
+                <div class="homeSlider__testimonial--profile-info p-[2rem]">
+                  <img src="./img/testi_author3.png" alt="James-profile" />
+                  <div>
+                    <h4 class="text-[20px]">Joshua Johnson</h4>
+                    <p class="text-base">Marketer</p>
+                  </div>
+                </div>
+                <p class="px-[2rem] pb-[2rem] text-base">
+                  Appropriately maintain installed base board sustainable
+                  product. Compellingly dissemins diverse methods empowerment
+                  whereas strategic theme areas
+                </p>
+              </div>
+              <div
+                class="homeSlider__testimonial--rating p-[2rem] flex justify-between"
+              >
+                <img src="./img/testi-brand1.png" alt="google-logo" />
+                <div class="text-light">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              class="homeSlider__testimoial bg-blue text-light rounded-md mt-[2rem]"
+            >
+              <div class="homeSlider__testimonial--profile border-b-[1px]">
+                <div class="homeSlider__testimonial--profile-info p-[2rem]">
+                  <img src="./img/testi_author3.png" alt="James-profile" />
+                  <div>
+                    <h4 class="text-[20px]">Joshua Johnson</h4>
+                    <p class="text-base">Marketer</p>
+                  </div>
+                </div>
+                <p class="px-[2rem] pb-[2rem] text-base">
+                  Appropriately maintain installed base board sustainable
+                  product. Compellingly dissemins diverse methods empowerment
+                  whereas strategic theme areas
+                </p>
+              </div>
+              <div
+                class="homeSlider__testimonial--rating p-[2rem] flex justify-between"
+              >
+                <img src="./img/testi-brand1.png" alt="google-logo" />
+                <div class="text-light">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -981,9 +1112,12 @@
         </div>
       </div>
     </section>
+
     <section class="brands py-[5rem]">
       <div class="container">
-        <div class="brands__wrapper flex gap-[4rem] lg:justify-center overflow-hidden">
+        <div
+          class="brands__wrapper flex gap-[4rem] lg:justify-center overflow-hidden"
+        >
           <img
             src="./img/brand_01.png"
             alt="dromix-logo"
@@ -1088,18 +1222,22 @@
           </div>
           <div>
             <h4 class="font-urbanist text-[24px] pb-[2rem]">Latest Blog</h4>
-            <p class="text-base font-mulish text-gray-400">
+            <p class="text-base font-mulish text-gray-400 mb:mb-[1rem]">
               Subscribe Our Newsletter
             </p>
-            <div class="flex">
+            <div class="relative">
               <form action="">
                 <input
                   type="text"
                   placeholder="Enter Your Email"
-                  class="bg-transparent text-gray-400 py-[1rem] px-[0.5rem] border-[1px] border-gray-400 rounded-md outline-none w-[25rem]"
+                  class="bg-transparent text-gray-400 py-[1.5rem] px-[0.5rem] border-[1px] border-gray-400 rounded-md outline-none w-[25rem]"
                 />
               </form>
-              <a href="" class="btn bg--blue ml-[-8rem]">SUBSCRIBE</a>
+              <a
+                href=""
+                class="btn bg--blue ml-[-8rem] absolute top-2 right-2 font-semibold"
+                >SUBSCRIBE</a
+              >
             </div>
             <h5 class="py-[1rem] font-urbanist text-[18px]">Payment Gateway</h5>
             <div class="flex flex-row gap-[1rem]">
@@ -1126,6 +1264,22 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    
+
+    <script type="module">
+      // import { tns } from "./src/tiny-slider.js";
+
+      var slider = tns({
+        container: ".homeSlider__slider",
+        items: 1,
+        speed: 500,
+        slideBy: "page",
+        autoplay: true,
+        axis: "horizontal",
+      });
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
